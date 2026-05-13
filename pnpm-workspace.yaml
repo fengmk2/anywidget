@@ -3,9 +3,9 @@ packages:
   - "packages/*"
   - "docs/**"
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@latest
-  vitest: npm:@voidzero-dev/vite-plus-test@latest
-  vite-plus: latest
+  vite: npm:@voidzero-dev/vite-plus-core@0.1.21-alpha.7
+  vitest: npm:@voidzero-dev/vite-plus-test@0.1.21-alpha.7
+  vite-plus: 0.1.21-alpha.7
   esbuild: ^0.28.0
   typescript: ^6.0.2
   react: ^19.2.5
@@ -16,6 +16,9 @@ catalog:
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
+minimumReleaseAgeExclude:
+  - vite-plus
+  - "@voidzero-dev/*"
 peerDependencyRules:
   allowAny:
     - vite
