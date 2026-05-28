@@ -12,11 +12,8 @@ minimumReleaseAgeExclude:
   - oxlint
   - oxfmt
   - oxlint-tsgolint
-  - vitest
-  - "@vitest/*"
 catalog:
   vite: "https://pkg.pr.new/voidzero-dev/vite-plus/@voidzero-dev/vite-plus-core@1588"
-  vitest: ^4.1.5
   vite-plus: "https://pkg.pr.new/voidzero-dev/vite-plus@1588"
   esbuild: ^0.28.0
   typescript: ^6.0.2
