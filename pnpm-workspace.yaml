@@ -3,9 +3,9 @@ packages:
   - "packages/*"
   - "docs/**"
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@latest
-  vitest: npm:@voidzero-dev/vite-plus-test@latest
-  vite-plus: latest
+  vite: https://pkg.pr.new/voidzero-dev/vite-plus/@voidzero-dev/vite-plus-core@1856
+  vitest: 4.1.9
+  vite-plus: https://pkg.pr.new/voidzero-dev/vite-plus@1856
   esbuild: ^0.28.0
   typescript: ^6.0.2
   react: ^19.2.5
@@ -14,8 +14,8 @@ catalog:
   "@types/react-dom": ^19.2.3
   "@types/node": ^25.6.0
 overrides:
-  vite: "catalog:"
-  vitest: "catalog:"
+  vite: https://pkg.pr.new/voidzero-dev/vite-plus/@voidzero-dev/vite-plus-core@1856
+  vitest: 4.1.9
 peerDependencyRules:
   allowAny:
     - vite
@@ -23,3 +23,16 @@ peerDependencyRules:
   allowedVersions:
     vite: "*"
     vitest: "*"
+minimumReleaseAge: 60
+minimumReleaseAgeExclude:
+  - "@voidzero-dev/*"
+  - vite-plus
+  - "@vitest/*"
+  - vite
+  - vitest
+  - "@oxc-project/*"
+  - "@oxlint/*"
+  - oxlint
+  - oxfmt
+  - oxlint-tsgolint
+blockExoticSubdeps: false
