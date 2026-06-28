@@ -2,6 +2,9 @@ import { defineConfig } from "vite-plus";
 import { playwright } from "vite-plus/test/browser-playwright";
 
 export default defineConfig({
+  staged: {
+    "*": "vp check --fix",
+  },
   fmt: {
     experimentalSortImports: {},
     ignorePatterns: ["CHANGELOG.md"],

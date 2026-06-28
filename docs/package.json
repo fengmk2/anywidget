@@ -30,7 +30,7 @@
     "sharp": "^0.33.4",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
-    "vite": "catalog:"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.c0a3a57de28c581e83ba2dc359311d67af46e6c4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",

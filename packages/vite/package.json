@@ -17,7 +17,7 @@
     }
   },
   "devDependencies": {
-    "vite": "catalog:"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.c0a3a57de28c581e83ba2dc359311d67af46e6c4"
   },
   "peerDependencies": {
     "vite": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
