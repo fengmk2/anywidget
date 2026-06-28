@@ -10,7 +10,8 @@
     "test": "vp test",
     "fix": "vp check --fix",
     "check": "vp check",
-    "publint": "pnpm --recursive --filter=\"./packages/**\" exec publint"
+    "publint": "pnpm --recursive --filter=\"./packages/**\" exec publint",
+    "prepare": "vp config"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.0",
@@ -18,12 +19,29 @@
     "@rspack/core": "^1.7.3",
     "@svitejs/changesets-changelog-github-compact": "^1.2.0",
     "@typescript/native-preview": "7.0.0-dev.20260421.2",
+    "@vitest/browser-playwright": "4.1.9",
     "esbuild": "catalog:",
     "playwright": "^1.58.0",
     "publint": "^0.3.17",
     "typescript": "catalog:",
-    "vite-plus": "catalog:",
-    "vitest": "catalog:"
+    "vite-plus": "0.0.0-commit.c0a3a57de28c581e83ba2dc359311d67af46e6c4",
+    "vitest": "4.1.9"
   },
-  "packageManager": "pnpm@9.10.0"
+  "packageManager": "pnpm@9.10.0",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.c0a3a57de28c581e83ba2dc359311d67af46e6c4",
+      "vitest": "4.1.9"
+    },
+    "peerDependencyRules": {
+      "allowAny": [
+        "vite",
+        "vitest"
+      ],
+      "allowedVersions": {
+        "vite": "*",
+        "vitest": "*"
+      }
+    }
+  }
 }
